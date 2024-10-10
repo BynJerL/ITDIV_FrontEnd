@@ -1,0 +1,30 @@
+main {
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+
+main div {
+    position: relative;
+    margin: 25px 100px 100px 100px;
+}
+
+h1, h2, p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    margin: -10px 0 40px 0;
+}
+
+main div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: 28px;
+}

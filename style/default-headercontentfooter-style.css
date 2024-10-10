@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    height: 75px;
+    z-index: 10;
+    display: flex;
+    border: 0px solid #949494;
+    text-align: center;
+    color: white;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 1px 1px 3px 3px silver;
+    width: 100%;
+    /* margin-bottom: 10px; */
+}
+
+header nav.menu {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    position: absolute;
+    height: 50px;
+    top: 10px;
+    right: 25px;
+}
+
+header img {
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+
+header nav.menu span{
+    position: relative;
+    top: 25%;
+    display: inline-block;
+    margin-left: 30px;
+    background-color: none;
+}
+
+
+header nav.menu span a{
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+header nav.menu span a:hover {
+    border-bottom: 2px solid teal;
+}
+
+header nav.menu span#login {
+    width: 75px;
+    height: 35px;
+    top: 15%;
+    background-color: teal;
+    border-radius: 17px;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+
+header nav.menu span#login a{
+    position: relative;
+    top: 5px;
+    color: white;
+}
+
+header nav#menu-mob {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    top: 75px;
+    background-color: teal;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    box-shadow: 1px 3px 3px 1px silver;
+}
+
+header nav#menu-mob div a {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+header nav#menu-mob div a:hover{
+    border-bottom: 2px solid white;
+}
+
+header nav#menu-mob div{
+    margin: 24px;
+}
+
+header a.icon {
+    visibility: hidden;
+    display: block;
+    color: teal;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+header nav#menu-mob div.product-2 {
+    position: relative;
+}
+
+header nav#menu-mob div.product-2 #product-submenu-2 {
+    display: none;
+}
+
+header nav#menu-mob div.product-2 #product-submenu-2 div a{
+    font-size: 12px;
+}
+
+#product {
+    position: relative;
+    display: inline-block;
+}
+
+#product .sub-menu {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 2px 5px 5px #696969;
+    text-align: left;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    left: -15px;
+    z-index: 11;
+}
+
+#product .sub-menu div{
+    color: teal;
+    margin: 20px;
+}
+
+#product .sub-menu div a:hover {
+    border: 0px;
+    color: teal;
+}
+
+#product:hover .sub-menu {
+    visibility: visible;
+    z-index: 20;
+}
+
+@media only screen and (max-width: 600px){
+
+    header a.icon {
+        visibility: visible;
+    }
+
+    header nav.menu {
+        visibility: hidden;
+    }
+
+}
+
+@media only screen and (min-width: 601px){
+    header nav#menu-mob {
+        visibility: hidden!important;
+    }
+}
+
+/* Content */
+
+main {
+    width: 100%;
+    box-shadow: 1px 0px 5px 3px silver;
+}
+
+/* Footer */
+
+footer {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 1px 5px 5px 5px silver;
+}
+
+footer div, footer p {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+footer div a {
+    margin: 7px;
+}

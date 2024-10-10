@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - MediCare</title>
+    <link rel="stylesheet" href="style/home-style.css">
+    <link rel="stylesheet" href="style/default-headercontentfooter-style.css">
+</head>
+<body>
+    <header>
+        <img src="gambar/icon.png" alt="icon" height="50px">
+        <nav class="menu">
+            <span><a href="home.html">Home</a></span>
+            <span id="product" onclick="PopUp()">
+                <a href="#">Products</a>
+                <div class="sub-menu" id="product-submenu">
+                    <div><a href="">Healthcare</a></div>
+                    <div><a href="">Cosmetics</a></div>
+                    <div><a href="product.html">Misc</a></div>
+                </div>
+            </span>
+            <span><a href="about-us.html">About Us</a></span>
+            <span><a href="register.html">Register</a></span>
+            <span  id="login"><a href="login.html">Login</a></span>
+        </nav>
+        <nav id="menu-mob">
+            <div><a href="home.html">Home</a></div>
+            <div class="product-2">
+                <a href="javascript:void(0);" onclick="ToggleProdNav()">Products</a>
+                <div class="sub-menu" id="product-submenu-2">
+                    <div><a href="">Healthcare</a></div>
+                    <div><a href="">Cosmetics</a></div>
+                    <div><a href="product.html">Misc</a></div>
+                </div>
+            </div>
+            <div><a href="about-us.html">About Us</a></div>
+            <div><a href="register.html">Register</a></div>
+            <div><a href="login.html">Login</a></div>
+        </nav>
+        <a href="javascript:void(0);" class="icon" onclick="ToggleNav()">&#9776</a>
+    </header>
+
+    <main id="content">
+        <div class="bg-image"></div>
+        <div class="content">
+            <h1 id="judul">WELCOME TO MEDICARE</h1>
+            <h3 id="sub-judul">One stop solution for your healthcare</h3><br/>
+            <div>
+                <a href="register.html">Join Us</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href=""><img src="gambar/twitter.png" alt="twitter" width="20px"></a>
+            <a href=""><img src="gambar/facebook.png" alt="facebook" width="20px"></a>
+            <a href="https://www.instagram.com/byn.legi/"><img src="gambar/instagram.png" alt="instagram" width="20px"></a>
+        </div><br/>
+        <p class="copyright">Copyright &#169 2022 Bryan J. Legihono. All Rights Reserved</p>
+        <br/>
+    </footer>
+    
+    <script src="script/home-script.js"></script>
+</body>
+</html>

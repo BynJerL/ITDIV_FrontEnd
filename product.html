@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - MediCare</title>
+    <link rel="stylesheet" href="style/product-style.css">
+    <link rel="stylesheet" href="style/default-headercontentfooter-style.css">
+</head>
+<body>
+    <header>
+        <img src="gambar/icon.png" alt="icon" height="50px">
+        <nav class="menu">
+            <span><a href="home.html">Home</a></span>
+            <span id="product" onclick="PopUp()">
+                <a href="#">Products</a>
+                <div class="sub-menu" id="product-submenu">
+                    <div><a href="">Healthcare</a></div>
+                    <div><a href="">Cosmetics</a></div>
+                    <div><a href="product.html">Misc</a></div>
+                </div>
+            </span>
+            <span><a href="about-us.html">About Us</a></span>
+            <span><a href="register.html">Register</a></span>
+            <span  id="login"><a href="login.html">Login</a></span>
+        </nav>
+        <nav id="menu-mob">
+            <div><a href="home.html">Home</a></div>
+            <div class="product-2">
+                <a href="javascript:void(0);" onclick="ToggleProdNav()">Products</a>
+                <div class="sub-menu" id="product-submenu-2">
+                    <div><a href="">Healthcare</a></div>
+                    <div><a href="">Cosmetics</a></div>
+                    <div><a href="product.html">Misc</a></div>
+                </div>
+            </div>
+            <div><a href="about-us.html">About Us</a></div>
+            <div><a href="register.html">Register</a></div>
+            <div><a href="login.html">Login</a></div>
+        </nav>
+        <a href="javascript:void(0);" class="icon" onclick="ToggleNav()">&#9776</a>
+    </header>
+
+    <main id="content">
+        <div class="title">
+            <h1>Miscellaneous</h1>
+            <p>Improve your lifestyle and life quality with our products</p>    
+        </div>
+        
+    
+        <div class="wrapper">
+            <div class="box">
+                <div class="emphasis">
+                    <h3>Best Selling!</h3>
+                </div>
+                <div class="image product-tray"></div>
+                <div class="description">
+                    <h2 class="product-name">4x4 Plastic Tray</h2>
+                    <p class="product-description">a total of 16 all-purposes removable plastic tray, with it's containing case.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="emphasis"></div>
+                <div class="image product-jar"></div>
+                <div class="description">
+                    <h2>1000ml Glass Jar</h2>
+                    <p>a 4-mm thick 1000ml glass jar to store almost everything.</p>  
+                </div>
+            </div>
+            <div class="box">
+                <div class="emphasis"></div>
+                <div class="image product-bag"></div>
+                <div class="description">
+                    <h2>MediCare Paper Bag</h2>
+                    <p>Reusable paper goodie bag made from thick paper (450gsm), suitable to carry all your needs.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href=""><img src="gambar/twitter.png" alt="twitter" width="20px"></a>
+            <a href=""><img src="gambar/facebook.png" alt="facebook" width="20px"></a>
+            <a href="https://www.instagram.com/byn.legi/"><img src="gambar/instagram.png" alt="instagram" width="20px"></a>
+        </div><br/>
+        <p class="copyright">Copyright &#169 2022 Bryan J. Legihono. All Rights Reserved</p>
+        <br/>
+    </footer>
+
+    <script src="script/home-script.js"></script>
+</body>
+</html>
